@@ -10,3 +10,10 @@ fetch(
   .catch((err) => {
     console.error(err);
   });
+
+/*
+TODO
+Create a function to generate the url to query by taking the input county name from the user input and inserting it in the url
+Edit existing query to accept the generated url, and unhide Results section
+Edit then to return data to the page
+*/

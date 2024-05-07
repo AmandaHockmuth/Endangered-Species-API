@@ -5,7 +5,7 @@ html {
 body {
       background: #000000 url(../images/HomeOfTheHeron.jpg);
       background-position: center;
-      color: #f8f2c5;
+      color: #fffbe0;
       font-size: large;
       font-family: 'Lexend', 'Courier New', Courier, monospace;
       margin: auto;
@@ -36,12 +36,6 @@ h2 {
       font-weight: bolder;
 }
 
-h3 {
-      font-size:large;
-      font-weight: bolder;
-      text-align: left;
-}
-
 .list {
       list-style-position: inside;
       list-style: none;
@@ -54,3 +48,8 @@ h3 {
       box-sizing: border-box;
       margin: 20px;
 }
+
+/*
+TODO
+Make Results hidden unless there is content to display
+*/
