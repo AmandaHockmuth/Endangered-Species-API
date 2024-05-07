@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Endangered Species by County</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Endangered Species by County</h1>
+    <section id="about" class="subsection">
+      <h2>About</h2>
+      <p class="about-body">
+        This page allows you to input the name of your county and will return a
+        list of species found there that are on the ECOS, or Environmental Conservation
+        Online System. <br> Information returned will include their common name, their status, and a link to learn more
+        if available.
+      </p>
+    </section>
+    <section id="userInput" class="subsection">
+      <input
+        type="text"
+        name="countyInput"
+        placeholder="County Name"
+        size="30"
+        required
+      />
+    </section>
+    <script src="js/index.js"></script>
+  </body>
+</html>
