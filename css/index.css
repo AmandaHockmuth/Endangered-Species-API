@@ -49,7 +49,9 @@ h2 {
       margin: 20px;
 }
 
-/*
-TODO
-Make Results hidden unless there is content to display
-*/
+#results {
+      display: none;
+}
+
+/* TO DO: 
+Fix text wrapping */

@@ -11,7 +11,7 @@
     <section id="about" class="subsection">
       <h2>About</h2>
       <p class="about-body">
-        This page allows you to input the name of your county and will return a
+        This page allows you to input the name of a county, and will return a
         list of species found there that are on the ECOS, or Environmental
         Conservation Online System. <br />
         Information returned will include their common name, their status, and a
@@ -19,19 +19,24 @@
       </p>
     </section>
     <section id="userInput" class="subsection">
-      <input
-        type="text"
-        name="countyInput"
-        placeholder="County Name"
-        size="30"
-        required
-      />
+      <h2>Enter a County</h2>
+        <p id="entry-instructions">Please enter a County name, with the first letter capitalized.</p>
+        <form id="user-input">
+              <input type="text" name="userInput" id="UserInput" placeholder="County Name" required="true"></input>
+              <button type="submit">Submit</button>
+        </form>
+    </section>
+    <section id="results" class="subsection">
+      <h2>Results</h2>
+        <ul id="results-list">
+        </ul>
     </section>
     <script src="js/index.js"></script>
   </body>
 </html>
 
-<!--
-TODO
-Format for Results section
+
+<!-- TO DO:
+Create a Nav Bar with atleast 2 options
+Fix user input naming conventions
 -->
