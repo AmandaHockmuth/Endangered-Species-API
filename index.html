@@ -7,24 +7,42 @@
     <link href="css/index.css" rel="stylesheet" />
   </head>
   <body>
+    <header>
+      <nav class="navigation">
+        <ol>
+          <div class="nav-flex-container">
+            <div><li class="nav-option"><a href="#about">About</a></li></div>
+            <div><li class="nav-option"><a href="#userInput">Entry</a></li></div>
+            <div><li class="nav-option"><a href="#results">Results</a></li></div>
+          </div>
+        </ol>
+      </nav>
+  </header>
     <h1>Endangered Species by County</h1>
     <section id="about" class="subsection">
       <h2>About</h2>
-      <p class="about-body">
-        This page allows you to input the name of your county and will return a
-        list of species found there that are on the ECOS, or Environmental Conservation
-        Online System. <br> Information returned will include their common name, their status, and a link to learn more
-        if available.
+      <p id="about-body">
+        This page allows you to input the name of a county, and will return a
+        list of species found there that are on the ECOS, or Environmental
+        Conservation Online System. <br>
+        Information returned will include their common name, their status, and a
+        link to learn more if available. <br>
+        You may extend your list to surrounding areas (or distant ones) by searching subsequent counties.<br>
+        To resart from scratch simply refresh the page.
       </p>
     </section>
     <section id="userInput" class="subsection">
-      <input
-        type="text"
-        name="countyInput"
-        placeholder="County Name"
-        size="30"
-        required
-      />
+      <h2>Enter a County</h2>
+        <p id="entry-instructions">Please enter a County name, with the first letter capitalized.</p>
+        <form id="user-input">
+              <input type="text" name="userInput" id="UserInput" placeholder="County Name" required="true"></input>
+              <button type="submit">Submit</button>
+        </form>
+    </section>
+    <section id="results" class="subsection">
+      <h2>Results</h2>
+        <ul id="results-list">
+        </ul>
     </section>
     <script src="js/index.js"></script>
   </body>
